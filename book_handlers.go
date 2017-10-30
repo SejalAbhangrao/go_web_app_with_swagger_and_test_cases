@@ -14,13 +14,12 @@ type Booklist struct {
 var books []Booklist
 
 //
-// @Summary Customer Visit1
-// @Description get session information by ID
+// @Summary Create Read Book List
+// @Description GET method
 // @Accept  json
 // @Produce  json
 // @Success 201 {string} string	"ok"
 // @Router /book [get]
-// get all sessions information...
 
 func getBookHandler(w http.ResponseWriter, r *http.Request) {
 	//Convert the "books" variable to json
@@ -38,13 +37,12 @@ func getBookHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 //
-// @Summary Customer Visit1
-// @Description get session information by ID
+// @Description POST method
 // @Accept  json
 // @Produce  json
 // @Success 201 {string} string	"ok"
 // @Router /book [post]
-// get all sessions information...
+
 func createBookHandler(w http.ResponseWriter, r *http.Request) {
 	// Create a new instance of Book
 	newBook := Booklist{}
