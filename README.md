@@ -1,3 +1,5 @@
+A simple go web application that helps you keep a track of books read.
+
 To run the server on your system:
 
 1. Make sure you have [dep](https://github.com/golang/dep) installed
