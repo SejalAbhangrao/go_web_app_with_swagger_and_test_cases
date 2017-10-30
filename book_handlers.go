@@ -13,6 +13,15 @@ type Booklist struct {
 
 var books []Booklist
 
+//
+// @Summary Customer Visit1
+// @Description get session information by ID
+// @Accept  json
+// @Produce  json
+// @Success 201 {string} string	"ok"
+// @Router /book [get]
+// get all sessions information...
+
 func getBookHandler(w http.ResponseWriter, r *http.Request) {
 	//Convert the "books" variable to json
 	birdListBytes, err := json.Marshal(books)
@@ -28,6 +37,14 @@ func getBookHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write(birdListBytes)
 }
 
+//
+// @Summary Customer Visit1
+// @Description get session information by ID
+// @Accept  json
+// @Produce  json
+// @Success 201 {string} string	"ok"
+// @Router /book [post]
+// get all sessions information...
 func createBookHandler(w http.ResponseWriter, r *http.Request) {
 	// Create a new instance of Book
 	newBook := Booklist{}

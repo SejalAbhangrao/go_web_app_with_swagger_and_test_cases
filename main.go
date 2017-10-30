@@ -2,10 +2,29 @@ package main
 
 import (
 	"fmt"
+	_ "go_web_app_with_swagger_and_test_cases/docs"
 	"net/http"
 
+	_ "github.com/gin-gonic/gin"
 	"github.com/gorilla/mux"
+	_ "github.com/swaggo/gin-swagger"
+
+	_ "github.com/swaggo/gin-swagger/swaggerFiles"
 )
+
+// @Summary Information about L2_SF APIs
+// @title L2_SF APIs
+// @version 1.0
+// @description This is a sample example.
+// @termsOfService http://swagger.io/terms/
+
+// @contact.name API Support
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+// @BasePath localhost:8080/
 
 // The new router function creates the router and
 // returns it to us. We can now use this function
